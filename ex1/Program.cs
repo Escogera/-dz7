@@ -9,6 +9,7 @@ int line = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число столбцов");
 int column = Convert.ToInt32(Console.ReadLine());
 double [,] massive = new double [line,column];
+Console.WriteLine();
 void PrintArray (double [,] massive)
 {
     for (int i = 0; i < massive.GetLength(0); i++)
@@ -16,7 +17,7 @@ void PrintArray (double [,] massive)
         for (int j = 0; j < massive.GetLength(1); j++)
         {
             double doubleNumber = Math.Round(massive[i, j], 1);
-            Console.Write(doubleNumber + " ");
+            Console.Write(doubleNumber + "  ");
         }
         Console.WriteLine();
     }

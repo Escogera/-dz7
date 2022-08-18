@@ -69,13 +69,4 @@ if (count==0) Console.WriteLine ($"{number} -> такого числа нет в
      
 FindNumber(massive);
   
- Console.WriteLine("Введите координаты");
- int a = Convert.ToInt32(Console.ReadLine());
- int b = Convert.ToInt32(Console.ReadLine());
- if (a>column && b>line)
- Console.WriteLine("такого числа нет");
- else
- {
- object c = massive.GetValue(a,b);
- Console.WriteLine(c);
- }
+
